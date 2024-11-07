@@ -6,6 +6,7 @@ describe("Register and login", () => {
   it("registers a new user and logs in successfully", () => {
     cy.get('button[data-bs-target="#registerModal"]')
       .first()
+      .contains("Create")
       .click({ force: true });
 
     cy.get("#registerModal").should("be.visible");
