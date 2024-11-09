@@ -1,9 +1,9 @@
-describe("Register and login", () => {
+describe("Register", () => {
   beforeEach(() => {
-    cy.visit("/index.html");
+    cy.visit("https://skr3d3.github.io/social-media-client/");
   });
 
-  it("registers a new user and logs in successfully", () => {
+  it("registers a new user", () => {
     cy.get('button[data-bs-target="#registerModal"]')
       .first()
       .contains("Create")
